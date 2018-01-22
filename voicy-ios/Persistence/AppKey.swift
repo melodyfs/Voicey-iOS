@@ -20,7 +20,6 @@ class AppKeys {
         return userDefaults.bool(forKey: DomainKeys.loggedIn)
     }
     
-    
     private init() {}
     
     func set(isLoggedIn: Bool) {

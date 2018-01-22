@@ -13,9 +13,9 @@ struct MemoViewModel {
     var memos: [Memo] = []
     
     init() {
-        networking.request { (response) in
-            
-        }
+//        networking.request { (response) in
+//
+//        }
     }
     
     func getMemos(memos: [Memo]) -> [MemoItemViewModel] {

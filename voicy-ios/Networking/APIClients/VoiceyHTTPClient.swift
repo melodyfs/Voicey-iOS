@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import KeychainSwift
 
 typealias NetworkCallback = (String) -> ()
 
@@ -65,13 +66,15 @@ enum Route {
 class VoiceyHTTPClient {
     
     static let instance = VoiceyHTTPClient()
+    let userDefaults = UserDefaults.standard
+    
     let session = URLSession.shared
     let base = "https://voicey-app.herokuapp.com/"
     
 //    func request(callback: NetworkCallback) {
     func request(route: Route, data: Encodable?, completion: @escaping (Data) -> Void) {
         let fullURL = base.appending(route.path())
-        var url = URL(string: fullURL)
+        let url = URL(string: fullURL)
         
         var request = URLRequest(url: url!)
         request.allHTTPHeaderFields = route.headers()
@@ -79,8 +82,13 @@ class VoiceyHTTPClient {
         request.httpMethod = route.method()
         
         session.dataTask(with: request) { (data, res, err) in
+            let httpResponse = res as? HTTPURLResponse
             if let data = data {
                 completion(data)
+                print("Networking succeeded")
+                let statusCode = (httpResponse?.statusCode)!
+                self.userDefaults.set(statusCode, forKey: "status")
+                print(statusCode)
             }
             else {
                 print(err?.localizedDescription ?? "Error")

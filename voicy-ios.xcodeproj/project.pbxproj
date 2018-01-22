@@ -38,6 +38,8 @@
 		6C76F0DD20126F41003C5656 /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C76F0DC20126F41003C5656 /* AppKey.swift */; };
 		6C76F0E020127294003C5656 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C76F0DF20127294003C5656 /* MemoViewModel.swift */; };
 		6C76F0E22015BB61003C5656 /* URLParam+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C76F0E12015BB61003C5656 /* URLParam+Extension.swift */; };
+		7A0E3C4E6BCEC63C4BA9106A /* Pods_voicy_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DDA520025D6B55AE3B3AA33 /* Pods_voicy_ios.framework */; };
+		BE569A511E355B69C0AFDE12 /* Pods_voicy_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556408B926F6544B4CD32493 /* Pods_voicy_iosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,7 @@
 		05612A6820009F180039A940 /* CreateMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemoViewController.swift; sourceTree = "<group>"; };
 		05612A6920009F180039A940 /* CreateMemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateMemoViewController.xib; sourceTree = "<group>"; };
 		05612A6D2000A1F10039A940 /* MemoListDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListDatasource.swift; sourceTree = "<group>"; };
+		556408B926F6544B4CD32493 /* Pods_voicy_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voicy_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C76F0D02011BBDC003C5656 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6C76F0D22011BBE5003C5656 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		6C76F0D52011CE05003C5656 /* AudioHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHandler.swift; sourceTree = "<group>"; };
@@ -86,6 +89,11 @@
 		6C76F0DC20126F41003C5656 /* AppKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKey.swift; sourceTree = "<group>"; };
 		6C76F0DF20127294003C5656 /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 		6C76F0E12015BB61003C5656 /* URLParam+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLParam+Extension.swift"; sourceTree = "<group>"; };
+		6DDA520025D6B55AE3B3AA33 /* Pods_voicy_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voicy_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BC85895425EA21C3A10B1D /* Pods-voicy-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voicy-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-voicy-ios/Pods-voicy-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		A330961B9DA948E1D39F0631 /* Pods-voicy-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voicy-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-voicy-ios/Pods-voicy-ios.release.xcconfig"; sourceTree = "<group>"; };
+		BFB7BD61A9876B8BA538D00E /* Pods-voicy-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voicy-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-voicy-iosTests/Pods-voicy-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA75C1064806BA72048009B1 /* Pods-voicy-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voicy-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-voicy-iosTests/Pods-voicy-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0E3C4E6BCEC63C4BA9106A /* Pods_voicy_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE569A511E355B69C0AFDE12 /* Pods_voicy_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +122,8 @@
 				05612A1820008BE70039A940 /* voicy-ios */,
 				05612A3020008BE70039A940 /* voicy-iosTests */,
 				05612A1720008BE70039A940 /* Products */,
+				D721B44F89DD6FBA30112660 /* Pods */,
+				E4C2961A69B4BE63FB955546 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,6 +311,26 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		D721B44F89DD6FBA30112660 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71BC85895425EA21C3A10B1D /* Pods-voicy-ios.debug.xcconfig */,
+				A330961B9DA948E1D39F0631 /* Pods-voicy-ios.release.xcconfig */,
+				DA75C1064806BA72048009B1 /* Pods-voicy-iosTests.debug.xcconfig */,
+				BFB7BD61A9876B8BA538D00E /* Pods-voicy-iosTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4C2961A69B4BE63FB955546 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DDA520025D6B55AE3B3AA33 /* Pods_voicy_ios.framework */,
+				556408B926F6544B4CD32493 /* Pods_voicy_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,9 +338,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05612A3620008BE70039A940 /* Build configuration list for PBXNativeTarget "voicy-ios" */;
 			buildPhases = (
+				D9A3FB8CEF762EEAF13E4BD3 /* [CP] Check Pods Manifest.lock */,
 				05612A1220008BE70039A940 /* Sources */,
 				05612A1320008BE70039A940 /* Frameworks */,
 				05612A1420008BE70039A940 /* Resources */,
+				FFC46D7FF5441BECC4C9D928 /* [CP] Embed Pods Frameworks */,
+				A94700FCAEA49ABFFB16797D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,9 +358,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05612A3920008BE70039A940 /* Build configuration list for PBXNativeTarget "voicy-iosTests" */;
 			buildPhases = (
+				873D14648A8E7817DDC85BC3 /* [CP] Check Pods Manifest.lock */,
 				05612A2920008BE70039A940 /* Sources */,
 				05612A2A20008BE70039A940 /* Frameworks */,
 				05612A2B20008BE70039A940 /* Resources */,
+				20B4E067B7A02EB068770B73 /* [CP] Embed Pods Frameworks */,
+				B79186DD766ACF52CDE9171D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -401,6 +439,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20B4E067B7A02EB068770B73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-voicy-iosTests/Pods-voicy-iosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		873D14648A8E7817DDC85BC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A94700FCAEA49ABFFB16797D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-voicy-ios/Pods-voicy-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B79186DD766ACF52CDE9171D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-voicy-iosTests/Pods-voicy-iosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9A3FB8CEF762EEAF13E4BD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFC46D7FF5441BECC4C9D928 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-voicy-ios/Pods-voicy-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		05612A1220008BE70039A940 /* Sources */ = {
@@ -571,6 +702,7 @@
 		};
 		05612A3720008BE70039A940 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71BC85895425EA21C3A10B1D /* Pods-voicy-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +718,7 @@
 		};
 		05612A3820008BE70039A940 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A330961B9DA948E1D39F0631 /* Pods-voicy-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -601,6 +734,7 @@
 		};
 		05612A3A20008BE70039A940 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA75C1064806BA72048009B1 /* Pods-voicy-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -618,6 +752,7 @@
 		};
 		05612A3B20008BE70039A940 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB7BD61A9876B8BA538D00E /* Pods-voicy-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

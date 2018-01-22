@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainSwift
 
 class RegisterViewController: UIViewController {
 
@@ -19,7 +20,13 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerPressed(_ sender: Any) {
+        let name = nameTextField.text
+        let email = emailTextField.text
+        let password = passwordTextField.text
         
+        let newUser = User(name: name, email: email, password: password, token: nil)
+        
+        VoiceyHTTPClient.instance.request(route: .createUser, data: newUser) { _ in}
         
     }
 }

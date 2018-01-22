@@ -5,7 +5,9 @@ target 'voicy-ios' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
+  # Pods for voicy-ios
   pod 'Moya', '~> 10.0'
+  pod 'KeychainSwift', '~> 9.0'
 
   target 'voicy-iosTests' do
     inherit! :search_paths
