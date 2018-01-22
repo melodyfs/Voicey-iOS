@@ -37,6 +37,7 @@ class AppDelegateViewModel {
         }
     }
     
+    // TODO: use notification to alert the change of status
     func changeStatus(authStatus: AuthStatus) {
         self.authStatus = authStatus
     }

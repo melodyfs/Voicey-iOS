@@ -13,32 +13,32 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemoListCell" id="gTV-IL-0wX" customClass="MemoListCell" customModule="voicy_ios" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="427" height="240"/>
+            <rect key="frame" x="0.0" y="0.0" width="506" height="378"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="427" height="240"/>
+                <rect key="frame" x="0.0" y="0.0" width="506" height="378"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SGa-HX-QWm">
                         <rect key="frame" x="-83.5" y="20" width="153" height="175"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hBM-ML-zej">
-                                <rect key="frame" x="0.0" y="0.0" width="427" height="190"/>
+                                <rect key="frame" x="0.0" y="0.0" width="506" height="328"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0e-l1-Sme">
-                                        <rect key="frame" x="0.0" y="0.0" width="427" height="149"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="506" height="287"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgD-Oz-lgg">
-                                        <rect key="frame" x="0.0" y="149" width="427" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="287" width="506" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkz-6P-J8C">
-                                        <rect key="frame" x="0.0" y="169.5" width="427" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="307.5" width="506" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -46,7 +46,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tte-SS-qmh">
-                                <rect key="frame" x="0.0" y="190" width="427" height="50"/>
+                                <rect key="frame" x="0.0" y="328" width="506" height="50"/>
                                 <color key="backgroundColor" red="0.074503047320000002" green="0.80207331729999998" blue="0.39346338549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="x9G-0c-FxK"/>
@@ -69,13 +69,13 @@
                 <constraint firstAttribute="bottom" secondItem="SGa-HX-QWm" secondAttribute="bottom" id="wEP-tL-jgB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="427" height="240"/>
+            <size key="customSize" width="506" height="378"/>
             <connections>
                 <outlet property="body" destination="vkz-6P-J8C" id="Y7D-L2-vPt"/>
                 <outlet property="date" destination="CgD-Oz-lgg" id="POW-pL-3AX"/>
                 <outlet property="title" destination="S0e-l1-Sme" id="wHy-yq-LKK"/>
             </connections>
-            <point key="canvasLocation" x="46.5" y="19"/>
+            <point key="canvasLocation" x="-111" y="-65"/>
         </collectionViewCell>
     </objects>
 </document>

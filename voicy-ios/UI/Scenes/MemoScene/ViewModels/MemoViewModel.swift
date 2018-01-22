@@ -29,4 +29,6 @@ struct MemoViewModel {
 
 struct MemoItemViewModel {
     let name: String
+//    let content: String
+    
 }

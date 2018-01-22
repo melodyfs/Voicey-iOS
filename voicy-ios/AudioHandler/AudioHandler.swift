@@ -38,7 +38,7 @@ class AudioHandler: NSObject {
         guard let recorder = try? AVAudioRecorder(
             url: outputFileURL,
             settings: recorderSetting
-            ) else {return}
+            ) else {return outputFileURL}
         
         self.recorder = recorder
         recorder.delegate = self
