@@ -11,17 +11,23 @@ import UIKit
 class MemoListViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    let dataSource = GenericCollectionViewDatasource<MemoItemViewModel>()
+    var dataSource = GenericCollectionViewDatasource<MemoItemViewModel>()
     let viewModel = MemoViewModel()
+    var memos = [MemoItemViewModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         registerCollectionView()
     }
     
     func registerCollectionView() {
         collectionView.register(MemoListCell.self)
+        viewModel.fetchMemos(callback: { [unowned self] (memos) in
+            self.dataSource.items = memos
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        })
         
         dataSource.configureCell = { cv, indexPath in
             let cell = cv.dequeueReusableCell(forIndexPath: indexPath) as MemoListCell
@@ -31,6 +37,15 @@ class MemoListViewController: UIViewController {
         
         collectionView.dataSource = dataSource
         collectionView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+            print("item: \(self.memos)")
+        }
     }
     
     func goToDetailController(selectedMemo: MemoItemViewModel) {

@@ -11,6 +11,6 @@ import Foundation
 struct Memo: Codable {
     var title: String?
     var text_body: String?
-    var date: Date?
+    var date: String?
     var voice_file_url: URL?
 }

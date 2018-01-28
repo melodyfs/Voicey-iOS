@@ -16,6 +16,8 @@ class MemoListCell: UICollectionViewCell {
     var viewModel: MemoItemViewModel? {
         didSet {
             title.text = viewModel?.name
+            date.text = viewModel?.time
+            body.text = viewModel?.content
         }
     }
     

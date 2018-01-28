@@ -49,7 +49,7 @@ class AppDelegateViewModel {
             
         }
         
-        //recieve notification
+        //switch view controller - recieve notification
         NotificationCenter
             .default
             .addObserver(
@@ -61,7 +61,7 @@ class AppDelegateViewModel {
         
     }
     
-    //switch root view controller after recieving the notification
+    //switch root view controller - after recieving the notification
     @objc func changeRootViewController(notification: Notification) {
         guard let authStatus = notification.object as? AuthStatus,
             let rootCallback = rootCallback
@@ -88,7 +88,7 @@ class AppDelegateViewModel {
     
     func changeStatus(authStatus: AuthStatus) {
         self.authStatus = authStatus
-        //post notification
+        //switch view controller - post notification
         NotificationCenter.default.post(
             name: Notification.Name("authorized"),
             object: authStatus
